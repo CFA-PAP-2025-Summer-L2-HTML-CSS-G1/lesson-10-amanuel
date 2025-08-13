@@ -65,10 +65,15 @@ main {
     margin: auto;
 
     /* Part 2 Exercises 1-4 */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+
 }
 
 .machine {
-    width: 30%; 
     background-color: #ece4d9;
     border: solid 4px #664b3d;
     /* Part 1 Exercise 7 */
@@ -79,7 +84,6 @@ main {
     
 
     /* Part 1 Exercise 8, Part 2 Exercise 1 */
-    display: inline-block;
     vertical-align: top;
 
 }
@@ -107,3 +111,30 @@ footer>p {
 
 
 /* Part 2 - Exercise 4 Responsive flexbox grid */
+
+@media (min-width: 800px) {
+ main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+
+ }
+ }
+
+
+@media (min-width: 800px) and (max-width: 1099px) {
+    .machine {
+        width: 46%;
+    }
+} 
+
+
+@media (min-width:1099px) {
+    .machine{
+        width: 30%;
+        max-width: 450px;
+    }
+
+}

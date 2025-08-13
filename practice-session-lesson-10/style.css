@@ -6,8 +6,13 @@ body {
     background-color: #fcffc5;
 }
 
+h1 , h3{
+    font-family: 'Tinos' , sans-serif;
+}
+
 h1 {
     font-size: 3em;
+    color: #292570;
 }
 
 
@@ -19,6 +24,9 @@ img {
 main {
     border: 10px solid #292570;
     background-color: #444082;
+    color: white;
+    font-family: 'Arial';
+    text-align: center;
 }
 
 div {
